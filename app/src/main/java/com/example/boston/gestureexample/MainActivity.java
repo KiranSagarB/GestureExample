@@ -7,7 +7,10 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.support.v4.view.GestureDetectorCompat;
 
-//
+//have to import Gesture Detector , Motion Event and Gesture Detector for the following events
+
+// have to implements GestureDetector ongesture listener
+// have to implement Gesture Detecor onDouble tap listener
 
 public class MainActivity extends AppCompatActivity implements GestureDetector.OnGestureListener,
         GestureDetector.OnDoubleTapListener{
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     }
 
 ////// Gestures Begining////////
+    // methods of  GestureDetector.OnGestureListener,GestureDetector.OnDoubleTapListener
+    // has to be implemented
 
     /// each return statement should be true , as it says that the event has been handled////
     @Override
@@ -88,6 +93,8 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         return true;
     }
 
+
+    // on touch event has to be implemented for the process//
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         this.kirangesture.onTouchEvent(event);
